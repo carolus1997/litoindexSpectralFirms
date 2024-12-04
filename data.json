@@ -1,0 +1,46 @@
+{
+    "landsat9": [
+        { "band": "OLI 1", "wavelength_start": 0.435, "wavelength_end": 0.451 },
+        { "band": "OLI 2", "wavelength_start": 0.452, "wavelength_end": 0.512 },
+        { "band": "OLI 3", "wavelength_start": 0.533, "wavelength_end": 0.590 },
+        { "band": "OLI 4", "wavelength_start": 0.636, "wavelength_end": 0.673 },
+        { "band": "OLI 5", "wavelength_start": 0.851, "wavelength_end": 0.879 },
+        { "band": "OLI 6", "wavelength_start": 1.566, "wavelength_end": 1.651 },
+        { "band": "OLI 7", "wavelength_start": 2.107, "wavelength_end": 2.294 },
+        { "band": "OLI 9", "wavelength_start": 1.363, "wavelength_end": 1.384 },
+        { "band": "TIRS 10", "wavelength_start": 10.60, "wavelength_end": 11.19 },
+        { "band": "TIRS 11", "wavelength_start": 11.50, "wavelength_end": 12.51 }
+    ],
+        "sentinel2": [
+        { "band": "Band 1 - Aerosol", "wavelength_start": 0.43, "wavelength_end": 0.45, "resolution": 60 },
+        { "band": "Band 2 - Blue", "wavelength_start": 0.45, "wavelength_end": 0.52, "resolution": 10 },
+        { "band": "Band 3 - Green", "wavelength_start": 0.54, "wavelength_end": 0.57, "resolution": 10 },
+        { "band": "Band 4 - Red", "wavelength_start": 0.65, "wavelength_end": 0.68, "resolution": 10 },
+        { "band": "Band 5 - Red Edge 1", "wavelength_start": 0.69, "wavelength_end": 0.71, "resolution": 20 },
+        { "band": "Band 6 - Red Edge 2", "wavelength_start": 0.73, "wavelength_end": 0.74, "resolution": 20 },
+        { "band": "Band 7 - Red Edge 3", "wavelength_start": 0.77, "wavelength_end": 0.79, "resolution": 20 },
+        { "band": "Band 8 - Near Infrared (NIR) 1", "wavelength_start": 0.78, "wavelength_end": 0.90, "resolution": 10 },
+        { "band": "Band 8A - Near Infrared (NIR) 2", "wavelength_start": 0.85, "wavelength_end": 0.87, "resolution": 20 },
+        { "band": "Band 9 - Water Vapour", "wavelength_start": 0.93, "wavelength_end": 0.95, "resolution": 60 },
+        { "band": "Band 10 - Cirrus", "wavelength_start": 1.36, "wavelength_end": 1.39, "resolution": 60 },
+        { "band": "Band 11 - SWIR 1", "wavelength_start": 1.56, "wavelength_end": 1.65, "resolution": 20 },
+        { "band": "Band 12 - SWIR 2", "wavelength_start": 2.10, "wavelength_end": 2.28, "resolution": 20 }
+        ],
+    "aster": [
+        { "band": "VNIR 1", "wavelength_start": 0.52, "wavelength_end": 0.60 },
+        { "band": "VNIR 2", "wavelength_start": 0.63, "wavelength_end": 0.69 },
+        { "band": "VNIR 3N", "wavelength_start": 0.78, "wavelength_end": 0.86 },
+        { "band": "VNIR 3B", "wavelength_start": 0.78, "wavelength_end": 0.86 },
+        { "band": "SWIR 4", "wavelength_start": 1.60, "wavelength_end": 1.70 },
+        { "band": "SWIR 5", "wavelength_start": 2.145, "wavelength_end": 2.185 },
+        { "band": "SWIR 6", "wavelength_start": 2.185, "wavelength_end": 2.225 },
+        { "band": "SWIR 7", "wavelength_start": 2.235, "wavelength_end": 2.285 },
+        { "band": "SWIR 8", "wavelength_start": 2.295, "wavelength_end": 2.365 },
+        { "band": "SWIR 9", "wavelength_start": 2.366, "wavelength_end": 2.430 },
+        { "band": "TIR 10", "wavelength_start": 8.125, "wavelength_end": 8.475 },
+        { "band": "TIR 11", "wavelength_start": 8.475, "wavelength_end": 8.825 },
+        { "band": "TIR 12", "wavelength_start": 8.925, "wavelength_end": 9.275 },
+        { "band": "TIR 13", "wavelength_start": 10.25, "wavelength_end": 10.95 },
+        { "band": "TIR 14", "wavelength_start": 10.96, "wavelength_end": 11.65 }
+    ]
+}

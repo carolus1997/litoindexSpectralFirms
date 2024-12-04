@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espectros de Reflectancia</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        #file-controls {
+            display: flex;
+            flex-direction: column;
+        }
+        svg {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        label {
+            font-weight: bold;
+        }
+        #tooltip {
+            position: absolute;
+            background: white;
+            border: 1px solid black;
+            padding: 5px;
+            display: none; /* Ocultar inicialmente */
+            pointer-events: none;
+            font-size: 12px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .band:hover {
+            opacity: 0.5; /* Resaltar la banda durante el hover */
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Espectros de Reflectancia</h1>
+
+    <!-- Controles principales -->
+    <div id="controls">
+        <!-- Control para selección de bandas -->
+        <div id="band-controls">
+            <label for="dataset">Seleccione las bandas:</label>
+            <select id="dataset">
+                <option value="landsat9">Landsat 9</option>
+                <option value="sentinel2">Sentinel2</option>
+                <option value="aster">ASTER</option>
+            </select>
+        </div>
+    
+        <!-- Control para selección y procesamiento de archivos -->
+        <div id="file-controls">
+            <label for="fileInput">Seleccione archivos de texto:</label>
+            <input type="file" id="fileInput" multiple />
+            <label for="mineralNameInput">Nombre del mineral:</label>
+            <input type="text" id="mineralNameInput" placeholder="Ej: Cuarzo" />
+            <button id="processFiles" class="btn">Procesar Archivos</button>
+            <button id="clearChart" class="btn">Limpiar Gráfica</button>
+        </div>
+    </div>
+
+    <!-- Contenedor del gráfico de firmas espectrales -->
+    <div id="chart"></div>
+
+    <!-- Tooltip -->
+    <div id="tooltip"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
